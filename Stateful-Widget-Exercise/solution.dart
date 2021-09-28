@@ -10,8 +10,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "volume button app",
       home: Scaffold(
-        appBar: AppBar(title: Text("volume button app")),
-        body: Center(
+        appBar: AppBar(title: const Text("volume button app")),
+        body: const Center(
           child: MyStatefulWidget(),
         ),
       ),
@@ -39,7 +39,7 @@ class _MyStatefulWidgetState extends State {
           children: [
             IconButton(
               iconSize: 75,
-              icon: Icon(Icons.volume_down),
+              icon: const Icon(Icons.volume_down),
               tooltip: 'Decrease volume by 10',
               onPressed: () {
                 setState(() {
@@ -49,7 +49,7 @@ class _MyStatefulWidgetState extends State {
             ),
             IconButton(
               iconSize: 75,
-              icon: Icon(Icons.volume_up),
+              icon: const Icon(Icons.volume_up),
               tooltip: 'Increase volume by 10',
               onPressed: () {
                 setState(() {
@@ -64,3 +64,4 @@ class _MyStatefulWidgetState extends State {
     );
   }
 }
+
