@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
 
 double _volume = 0.0;
 
+
 class MyStatefulWidget extends StatefulWidget {
   const MyStatefulWidget({Key? key}) : super(key: key);
   @override
@@ -42,7 +43,7 @@ class _MyStatefulWidgetState extends State {
               tooltip: 'Decrease volume by 10',
               onPressed: () {
                 setState(() {
-                  _volume -= 10;
+                  _volume == 0 ? null :_volume -= 10;
                 });
               },
             ),
@@ -52,7 +53,7 @@ class _MyStatefulWidgetState extends State {
               tooltip: 'Increase volume by 10',
               onPressed: () {
                 setState(() {
-                  _volume += 10;
+                  _volume == 100 ? null : _volume += 10;
                 });
               },
             ),
