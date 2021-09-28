@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
 double _volume = 0.0;
 
 class MyStatefulWidget extends StatefulWidget {
-  const ({Key? key}) : super(key: key);
+  const MyStatefulWidget({Key? key}) : super(key: key);
   @override
   State createState() => _MyStatefulWidgetState();
 }
