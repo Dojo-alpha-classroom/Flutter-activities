@@ -20,8 +20,8 @@ class MyApp extends StatelessWidget {
                 //mainAxisSize: MainAxisSize.min,
                 //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Image.network('https://picsum.photos/id/1018/200'),
-                    Image.network('https://picsum.photos/200'),
+                    Image.network('https://picsum.photos/id/1018/100'),
+                    Image.network('https://picsum.photos/100'),
                   ]
               ),
             )
