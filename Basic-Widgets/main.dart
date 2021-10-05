@@ -9,12 +9,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Row(
-              children: [
-                Container(
-                  width: 100,
-                  height: 100,
-                  color: Colors.red,
-                ),
+            children: [
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.red,
+              ),
             Container(
               width: 100,
               height: 100,
