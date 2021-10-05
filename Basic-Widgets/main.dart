@@ -8,26 +8,24 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: Row(
-            children: [
-              Container(
-                width: 100,
-                height: 100,
-                color: Colors.red,
-              ),
-              Container(
-                width: 100,
-                height: 100,
-                color: Colors.grey,
-              ),
-              Container(
-                width: 100,
-                height: 100,
-                color: Colors.blue,
-              )
-            ],
-          ),
+        body: Row(
+              children: [
+                Container(
+                  width: 100,
+                  height: 100,
+                  color: Colors.red,
+                ),
+            Container(
+              width: 100,
+              height: 100,
+              color: Colors.grey,
+            ),
+            Container(
+              width: 100,
+              height: 100,
+              color: Colors.blue,
+            )
+          ],
         )
       ),
     );
