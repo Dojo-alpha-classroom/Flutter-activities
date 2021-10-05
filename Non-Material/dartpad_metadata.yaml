@@ -1,0 +1,5 @@
+name: A Dartpad exercise
+mode: flutter
+files:
+  - name: main.dart
+  - name: solution.dart
