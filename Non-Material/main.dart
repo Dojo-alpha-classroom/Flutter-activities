@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         children: [
           Container(
             height: 56.0, // in logical pixels
-            padding: const EdgeInsets.symmetric(horizontal: 8.0),
+            padding: const EdgeInsets.symmetric(horizontal: 14.0),
             decoration: BoxDecoration(color: Colors.blue[500]),
             // Row is a horizontal, linear layout.
             child: Align(
