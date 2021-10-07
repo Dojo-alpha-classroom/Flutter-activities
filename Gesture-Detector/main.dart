@@ -30,22 +30,21 @@ class _MyHomePageState extends State<MyInteractiveWidget> {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Container(
-        height: 100.0,
-        width: 100.0,
-        decoration: BoxDecoration(
-          shape: _shape,
-          color: _color,
-        ),
-
-        child: GestureDetector(
-          onTap: () {
-            setState(() {
-              _shape == BoxShape.circle
-                  ? _shape = BoxShape.rectangle
-                  : _shape = BoxShape.circle;
-            });
-          },
+      child: GestureDetector(
+        onTap: () {
+          setState(() {
+            _shape == BoxShape.circle
+                ? _shape = BoxShape.rectangle
+                : _shape = BoxShape.circle;
+          });
+        },
+        child: Container(
+          height: 100.0,
+          width: 100.0,
+          decoration: BoxDecoration(
+            shape: _shape,
+            color: _color,
+          ),
         ),
       ),
     );
